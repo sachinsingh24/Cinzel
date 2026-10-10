@@ -16,11 +16,8 @@
 
 :root {
   --navy: #0b1f3a;
-  --navy-2: #16305a;
   --ivory: #f4efe6;
-  --cream: #efe6d4;
   --gold: #c9a24b;
-  --gold-soft: #e0c37f;
   --ink: #201d17;
   --muted: #6d6455;
   --line: rgba(32, 29, 23, 0.14);
@@ -129,8 +126,8 @@ p {
 }
 
 .btn:hover {
-  background: var(--gold-soft);
-  border-color: var(--gold-soft);
+  background: var(--gold);
+  border-color: var(--ivory);
 }
 
 .btn.ghost {
@@ -231,8 +228,8 @@ p {
   align-items: center;
   color: var(--ivory);
   background:
-    radial-gradient(120% 90% at 50% 0%, rgba(22, 48, 90, 0.55), transparent 60%),
-    linear-gradient(180deg, #060f22 0%, #0b1f3a 55%, #07162c 100%);
+    radial-gradient(120% 90% at 50% 0%, rgba(201, 162, 75, 0.16), transparent 60%),
+    var(--navy);
   overflow: hidden;
 }
 
@@ -240,7 +237,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(224, 195, 127, 0.14) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(201, 162, 75, 0.14) 1px, transparent 1px);
   background-size: 34px 34px;
   opacity: 0.5;
   mask-image: radial-gradient(80% 70% at 50% 30%, #000 0%, transparent 75%);
@@ -252,9 +249,10 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--display);
-  font-size: clamp(8rem, 26vw, 24rem);
+  font-size: clamp(7rem, 17vw, 18rem);
   letter-spacing: 0.12em;
-  color: rgba(244, 239, 230, 0.03);
+  text-transform: uppercase;
+  color: rgba(244, 239, 230, 0.07);
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
@@ -274,7 +272,7 @@ p {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--gold-soft);
+  color: var(--gold);
 }
 
 .hero-lead {
@@ -292,7 +290,7 @@ p {
 
 /* ---------- Voyages ---------- */
 .voyages {
-  background: var(--cream);
+  background: var(--ivory);
 }
 
 .voyage-grid {
@@ -323,8 +321,8 @@ p {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(90% 60% at 50% 0%, rgba(201, 162, 75, 0.32), transparent 65%),
-    linear-gradient(180deg, rgba(11, 31, 58, 0.15), rgba(6, 16, 34, 0.92));
+    radial-gradient(90% 60% at 50% 0%, rgba(201, 162, 75, 0.28), transparent 65%),
+    linear-gradient(180deg, rgba(244, 239, 230, 0.05), rgba(11, 31, 58, 0.95));
 }
 
 .card > * {
@@ -337,7 +335,7 @@ p {
   font-size: 0.68rem;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: var(--gold-soft);
+  color: var(--gold);
 }
 
 .card h3 {
@@ -388,7 +386,7 @@ p {
 
 /* ---------- Footer ---------- */
 .footer {
-  background: #070f20;
+  background: var(--navy);
   color: rgba(244, 239, 230, 0.75);
   padding: 80px 0 34px;
 }
@@ -413,6 +411,16 @@ p {
   max-width: 480px;
   color: rgba(244, 239, 230, 0.7);
   font-size: 1.08rem;
+}
+
+.footer-actions {
+  min-width: 0;
+}
+
+.footer-actions .btn {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .footer-bottom {
@@ -445,6 +453,9 @@ p {
   .section {
     padding: 72px 0;
   }
+  .hero-bg-word {
+    display: none;
+  }
   .nav-links {
     position: absolute;
     top: 100%;
@@ -476,7 +487,6 @@ p {
   html {
     scroll-behavior: auto;
   }
-  .marquee-track,
   .card,
   .btn,
   .hero-bg-word {
