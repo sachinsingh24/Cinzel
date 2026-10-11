@@ -14,15 +14,6 @@ export default function HeroSection() {
           Member Requests Registration
         </a>
       </div>
-
-      <div className="hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" focusable="false">
-          <path
-            d="M0,72 C180,120 360,24 540,32 C720,40 900,116 1080,104 C1260,92 1360,52 1440,64 L1440,120 L0,120 Z"
-            fill="#f5f0e7"
-          />
-        </svg>
-      </div>
     </header>
   );
 }
