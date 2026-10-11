@@ -27,7 +27,7 @@ export default function SiteFooter() {
   return (
     <footer className="site-footer" id="contact">
       <div className="wrap">
-        <BrandWordmark className="footer-logo" />
+        <BrandWordmark variant="navy" className="footer-logo" />
 
         <div className="footer-cols">
           <div className="footer-col">
@@ -54,9 +54,6 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        <p className="footer-copy">
-          &copy; {new Date().getFullYear()} Saints Voyager. Luxury Travel Concierge.
-        </p>
       </div>
     </footer>
   );
