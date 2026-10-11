@@ -1,17 +1,17 @@
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Voyages from "./components/Voyages.jsx";
-import Footer from "./components/Footer.jsx";
+import HeroSection from "./components/HeroSection.jsx";
+import ServicesSection from "./components/ServicesSection.jsx";
+import ContactCTA from "./components/ContactCTA.jsx";
+import SiteFooter from "./components/SiteFooter.jsx";
 
 export default function App() {
   return (
     <>
-      <Navbar />
+      <HeroSection />
       <main>
-        <Hero />
-        <Voyages />
+        <ServicesSection />
+        <ContactCTA />
       </main>
-      <Footer />
+      <SiteFooter />
     </>
   );
 }
