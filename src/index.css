@@ -128,7 +128,7 @@ h3 {
   inset: 0;
   background:
     radial-gradient(120% 80% at 50% 15%, rgba(201, 164, 92, 0.16), transparent 60%),
-    linear-gradient(180deg, rgba(8, 22, 39, 0.88), rgba(11, 30, 58, 0.74) 48%, rgba(11, 30, 58, 0.92));
+    linear-gradient(180deg, rgb(36 60 88 / 88%), rgb(102 110 122 / 74%) 48%, rgb(4 8 13 / 92%));
 }
 
 .hero-content {
@@ -300,7 +300,7 @@ h3 {
 
 .footer-cols {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 28px;
   margin-top: clamp(36px, 5vw, 56px);
   padding-top: clamp(32px, 5vw, 48px);
@@ -346,10 +346,23 @@ h3 {
 /* ---------- Responsive ---------- */
 @media (min-width: 1024px) {
   .hero {
-    min-height: 500px;
+    min-height: clamp(600px, 92vh, 1100px);
   }
   .hero-content {
-    padding: 110px 0 150px;
+    padding: 140px 0 160px;
+    gap: clamp(20px, 3vw, 30px);
+  }
+  .hero-logo {
+    width: clamp(190px, 22vw, 290px);
+  }
+  .hero-title {
+    font-size: clamp(1.9rem, 4vw, 3rem);
+  }
+  .hero-tagline {
+    font-size: clamp(1.2rem, 2.2vw, 1.85rem);
+  }
+  .hero-cta {
+    margin-top: 14px;
   }
 }
 
@@ -391,9 +404,13 @@ h3 {
     border-left: 0;
     margin-top: 22px;
   }
-  .footer-cols {
-    grid-template-columns: 1fr;
-    gap: 32px;
+}
+
+@media (max-width: 480px) {
+  .cta-btn {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    padding: 14px 18px;
   }
 }
 
