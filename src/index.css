@@ -367,8 +367,20 @@ h3 {
 
 /* ---------- Responsive ---------- */
 @media (min-width: 1024px) {
+  .hero-wave {
+    height: 108px;
+    margin-top: -108px;
+  }
+  .hero-wave svg {
+    transform: translateY(-1px) scaleY(1.32);
+    transform-origin: center;
+  }
   .hero {
     height: 640px;
+    aspect-ratio: auto;
+    background-image: url("/assets/canva-design-reference.png");
+    background-size: cover;
+    background-position: center;
   }
   .hero-content {
     padding: 63px 0 104px;
