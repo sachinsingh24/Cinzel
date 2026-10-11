@@ -14,6 +14,7 @@ const SERVICES = [
   {
     image: "/assets/beach-wedding-destination-events.jpg",
     alt: "Beach wedding ceremony framed by a floral arch",
+    title: "Destination Events",
   },
 ];
 
