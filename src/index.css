@@ -128,7 +128,7 @@ h3 {
   inset: 0;
   background:
     radial-gradient(120% 80% at 50% 15%, rgba(201, 164, 92, 0.16), transparent 60%),
-    linear-gradient(180deg, rgb(36 60 88 / 88%), rgb(102 110 122 / 74%) 48%, rgb(4 8 13 / 92%));
+    linear-gradient(180deg, rgb(38 95 161 / 88%), rgb(28 41 61 / 54%) 48%, rgb(9 39 77 / 92%));
 }
 
 .hero-content {
