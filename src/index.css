@@ -118,8 +118,8 @@ h3 {
   min-height: clamp(620px, 92vh, 720px);
   background-color: var(--navy);
   background-image: url("/assets/canva-design-reference.png");
-  background-size: cover;
-  background-position: center 55%;
+  background-size: 100% 100%;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -183,7 +183,7 @@ h3 {
 /* ---------- Services ---------- */
 .services {
   background: var(--ivory);
-  padding: clamp(60px, 9vw, 110px) 0 clamp(28px, 4vw, 44px);
+  padding: 0 0 clamp(28px, 4vw, 44px);
 }
 
 .services-head {
@@ -346,23 +346,23 @@ h3 {
 /* ---------- Responsive ---------- */
 @media (min-width: 1024px) {
   .hero {
-    min-height: clamp(600px, 92vh, 1100px);
+    min-height: clamp(540px, 74vh, 720px);
   }
   .hero-content {
-    padding: 140px 0 160px;
-    gap: clamp(20px, 3vw, 30px);
+    padding: 90px 0 150px;
+    gap: 20px;
   }
   .hero-logo {
-    width: clamp(190px, 22vw, 290px);
+    width: clamp(170px, 20vw, 240px);
   }
   .hero-title {
-    font-size: clamp(1.9rem, 4vw, 3rem);
+    font-size: clamp(1.7rem, 3.4vw, 2.7rem);
   }
   .hero-tagline {
-    font-size: clamp(1.2rem, 2.2vw, 1.85rem);
+    font-size: clamp(1.15rem, 2vw, 1.6rem);
   }
   .hero-cta {
-    margin-top: 14px;
+    margin-top: 10px;
   }
 }
 
