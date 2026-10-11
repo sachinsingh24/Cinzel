@@ -104,8 +104,8 @@ h3 {
 }
 
 .btn:hover {
-  background: var(--ivory);
-  border-color: var(--ivory);
+  background: var(--gold);
+  border-color: var(--gold);
   color: var(--navy);
   box-shadow: 0 8px 18px rgb(5 21 40 / 20%);
   transform: translateY(-2px);
@@ -299,8 +299,8 @@ h3 {
 }
 
 .cta-btn:hover {
-  background: #18385f;
-  color: var(--ivory);
+  background: var(--gold);
+  color: var(--navy);
 }
 
 /* ---------- Footer ---------- */
